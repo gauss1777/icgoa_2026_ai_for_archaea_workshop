@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive evidence-first AI tutorial for archaeal literature triage.">
+  <title>Tutorial Demo 01 · AI for Archaea</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/tutorial.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">
+      <span class="wordmark-mark" aria-hidden="true">A</span>
+      <span>AI for Archaea</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Workshop</a>
+      <a href="knowledge-base.html">Knowledge Base</a>
+      <a class="current" href="tutorial-demo.html">Tutorial Demo</a>
+      <a href="https://github.com/gauss1777/icgoa_2026_ai_for_archaea_workshop">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="demo-page">
+    <header class="page-intro">
+      <p class="eyebrow">TUTORIAL DEMO 01 · LITERATURE TRIAGE</p>
+      <h1>Build an evidence brief,<br>not just an answer</h1>
+      <p class="hero-summary">Use three synthetic archaeal records to practice question framing, transparent retrieval, evidence extraction, and human verification. Everything runs locally in your browser.</p>
+    </header>
+
+    <div class="demo-disclosure">
+      <strong>Training boundary</strong>
+      <p>This demo uses a deterministic keyword scorer, not a language model. The records are synthetic and have no DOI. The transparent mechanism lets you inspect the workflow before connecting real literature or an external AI service.</p>
+    </div>
+
+    <section class="demo-step" aria-labelledby="step-one-title">
+      <div class="step-marker"><span>01</span><p>FRAME</p></div>
+      <div>
+        <h2 id="step-one-title">Define the biological question</h2>
+        <label for="topic">Archaeal topic</label>
+        <select id="topic">
+          <option value="methane">Methane cycling</option>
+          <option value="ammonia">Ammonia oxidation</option>
+          <option value="virus">Virus–host interactions</option>
+        </select>
+
+        <label for="question">Research question</label>
+        <textarea id="question" rows="4">Which records provide evidence relevant to archaeal methane cycling, and what still requires expert verification?</textarea>
+
+        <fieldset>
+          <legend>Required evidence fields</legend>
+          <label class="check-option"><input type="checkbox" value="source" checked> Source identifier</label>
+          <label class="check-option"><input type="checkbox" value="sentence" checked> Supporting sentence</label>
+          <label class="check-option"><input type="checkbox" value="context" checked> Environmental context</label>
+          <label class="check-option"><input type="checkbox" value="uncertainty" checked> Uncertainty note</label>
+        </fieldset>
+
+        <div class="demo-actions">
+          <button class="button primary" id="run-scan" type="button">Run evidence scan</button>
+          <button class="button secondary" id="reset-demo" type="button">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-step" aria-labelledby="step-two-title">
+      <div class="step-marker"><span>02</span><p>RETRIEVE</p></div>
+      <div>
+        <h2 id="step-two-title">Inspect candidate records</h2>
+        <p class="step-help">The scorer uses visible topic terms and question tokens. Review the matched terms and supporting sentences rather than trusting the rank.</p>
+        <div id="results" class="results" aria-live="polite">
+          <p class="empty-state">Run the evidence scan to rank the three training records.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-step" aria-labelledby="step-three-title">
+      <div class="step-marker"><span>03</span><p>STRUCTURE</p></div>
+      <div>
+        <h2 id="step-three-title">Generate a traceable brief</h2>
+        <p class="step-help">The brief keeps source IDs next to claims and lists unresolved checks. It is a review object, not a final scientific conclusion.</p>
+        <button class="button primary" id="build-brief" type="button" disabled>Build evidence brief</button>
+        <div id="brief" class="brief-output" aria-live="polite">
+          <p class="empty-state">A structured brief will appear here after retrieval.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-step" aria-labelledby="step-four-title">
+      <div class="step-marker"><span>04</span><p>PROMPT</p></div>
+      <div>
+        <h2 id="step-four-title">Inspect the model-ready prompt</h2>
+        <p class="step-help">If an approved model is later used, send the bounded records and explicit output contract—not an untraceable request for a general answer.</p>
+        <pre id="prompt-preview" class="prompt-preview">Run the demo to generate a bounded prompt.</pre>
+      </div>
+    </section>
+
+    <section class="reflection">
+      <p class="section-number">HUMAN REVIEW CHECKPOINT</p>
+      <h2>Before reusing the brief</h2>
+      <ul>
+        <li>Are the organisms assigned with a current and stated taxonomy?</li>
+        <li>Does the evidence show genomic potential, expression, activity, or a measured rate?</li>
+        <li>Is the environmental context comparable to the target question?</li>
+        <li>Could the same marker support a different pathway or interpretation?</li>
+        <li>Have primary sources replaced all synthetic or secondary training material?</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>AI for Archaea · Tutorial Demo 01 · 2026</p>
+    <div><a href="index.html">Workshop Home</a><a href="tutorials/demo-01-literature-triage/README.md">Tutorial Notes</a></div>
+  </footer>
+</body>
+</html>
