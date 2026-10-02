@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A conceptual case study on transferring evidence-gated agent ideas from CryoForge to archaeal single-particle cryo-EM and cellular cryo-ET.">
+  <title>Case Study 02 · Evidence-Gated Imaging Agents</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/imaging-agent-case-study.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">
+      <span class="wordmark-mark" aria-hidden="true">A</span>
+      <span>AI for Archaea</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Workshop</a>
+      <a href="knowledge-base.html">Knowledge Base</a>
+      <a href="tutorial-demo.html">Literature Demo</a>
+      <a class="current" href="imaging-agent-case-study.html">Imaging Case</a>
+      <a href="https://github.com/gauss1777/icgoa_2026_ai_for_archaea_workshop">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="demo-page imaging-case-page">
+    <header class="page-intro">
+      <p class="eyebrow">CASE STUDY 02 · AGENTIC IMAGING</p>
+      <h1>When should an imaging agent act—and when should it stop?</h1>
+      <p class="hero-summary">Use CryoForge as a case study in evidence-gated agency. Separate its reusable control logic from validators and edit operations that belong only to atomic model building, then redesign the pattern for archaeal single-particle cryo-EM and cellular cryo-ET.</p>
+    </header>
+
+    <div class="demo-disclosure source-boundary">
+      <strong>Source and teaching boundary</strong>
+      <p><em>CryoForge</em> is a 2026 bioRxiv preprint (version 1; not yet peer reviewed). This module uses a limited reading of the cited preprint. Its primary full text was not successfully rechecked during the October review; no implementation or performance is reproduced here. It is an independent educational interpretation—not a reproduction, endorsement, or implementation of CryoForge. The decision exercises are synthetic and do not process microscopy data.</p>
+    </div>
+
+    <nav class="jump-nav" aria-label="Case study sections">
+      <a href="#judgment">Judgment</a>
+      <a href="#loop">Agent Loop</a>
+      <a href="#transfer">Transfer Map</a>
+      <a href="#atomic-only">Atomic Only</a>
+      <a href="#decide">Decision Lab</a>
+      <a href="#design">Reflection</a>
+      <a href="#workshop">Exercise</a>
+      <a href="#sources">Sources</a>
+    </nav>
+
+    <section class="case-section" id="judgment">
+      <div class="case-label"><span>01</span><p>JUDGMENT</p></div>
+      <div class="case-content">
+        <h2>Transfer the control architecture, not the atomic machinery</h2>
+        <p class="lead-judgment">This exercise illustrates a general evidence-first pattern: inspect a bounded proposal, require appropriate independent evidence, preserve a reversible state and acknowledge unresolved ambiguity. Its residue-level actions and atomic validators do not transfer to cellular tomography.</p>
+        <div class="verdict-grid">
+          <article class="verdict-card transferable">
+            <span>TRANSFER</span>
+            <h3>Agent governance</h3>
+            <p>Proposal–acceptance separation, legal action spaces, independent gates, rollback, trajectory logs, stopping rules, and expert escalation.</p>
+          </article>
+          <article class="verdict-card redesign">
+            <span>REDESIGN</span>
+            <h3>Evidence and actions</h3>
+            <p>Replace atomic metrics with half-map, alignment, reconstruction, topology, continuity, uncertainty, replicate, and biological-context checks.</p>
+          </article>
+          <article class="verdict-card do-not-transfer">
+            <span>DO NOT TRANSFER</span>
+            <h3>Atomic-specific logic</h3>
+            <p>Residue edits, sequence registration, bond geometry, rotamers, Ramachandran statistics, clashes, and atomic connectivity.</p>
+          </article>
+        </div>
+        <p class="caution"><strong>Claim boundary:</strong> the reported CryoForge benchmark outcomes belong to its tested atomic-model trajectories. They do not establish safety, accuracy, or generalization for archaeal specimens, particle processing, tomogram segmentation, or subtomogram averaging.</p>
+      </div>
+    </section>
+
+    <section class="case-section" id="loop">
+      <div class="case-label"><span>02</span><p>AGENT LOOP</p></div>
+      <div class="case-content">
+        <h2>A five-part scientific action contract</h2>
+        <p>The transferable unit is not a language-model prompt. It is a transactional loop in which a proposer is not allowed to certify its own work.</p>
+        <ol class="agent-loop" aria-label="Evidence-gated agent loop">
+          <li><span>1</span><div><h3>Diagnose</h3><p>Locate a residual problem and record the evidence that triggered review.</p></div></li>
+          <li><span>2</span><div><h3>Propose</h3><p>Choose one bounded, legal action from a domain-defined action space.</p></div></li>
+          <li><span>3</span><div><h3>Gate</h3><p>Test the proposal with evidence not reducible to the proposer’s objective.</p></div></li>
+          <li><span>4</span><div><h3>Commit or revert</h3><p>Promote only a supported derivative; otherwise preserve the previous state.</p></div></li>
+          <li><span>5</span><div><h3>Stop or escalate</h3><p>End on convergence, conflict, ambiguity, out-of-distribution input, or budget limit.</p></div></li>
+        </ol>
+        <div class="principle-strip">
+          <p><strong>Proposer ≠ judge</strong><span>The optimization path cannot be the sole validation path.</span></p>
+          <p><strong>Raw data ≠ editable state</strong><span>Actions create versioned derivatives; raw movies and tilt images remain immutable.</span></p>
+          <p><strong>Silence ≠ success</strong><span>Every run ends with an explicit promote, rollback, stop, or escalate status.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="transfer">
+      <div class="case-label"><span>03</span><p>TRANSFER MAP</p></div>
+      <div class="case-content">
+        <h2>One governance pattern, three distinct evidence regimes</h2>
+        <div class="table-scroll" role="region" aria-label="Transferability matrix" tabindex="0">
+          <table class="transfer-table">
+            <thead>
+              <tr><th>CryoForge-level idea</th><th>Atomic model building</th><th>Single-particle cryo-EM</th><th>Cellular cryo-ET</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Residual diagnosis</td><td>Flag local model errors</td><td>Flag unstable particle subsets, classes, orientations, CTF or refinement branches</td><td>Flag alignment failures, discontinuous boundaries, implausible objects, uncertain picks or inconsistent adjacent volumes</td></tr>
+              <tr><td>Legal action set</td><td>Residue- or segment-level repairs</td><td>Retry a bounded processing branch; refine parameters; revise a derived particle subset or mask</td><td>Retry alignment or reconstruction; split/merge a candidate object; revise derived labels or picks; never overwrite raw tilts</td></tr>
+              <tr><td>Independent gate</td><td>Map and half-map support plus stereochemistry, connectivity, and context</td><td>Independent half-map behavior, FSC/local resolution, orientation coverage, stability across seeds or subsets, and model-free diagnostics</td><td>Reprojection/alignment residuals, held-out views or volumes, slice continuity, topology, missing-wedge sensitivity, replicate consistency, and expert-reviewed subsets</td></tr>
+              <tr><td>Rollback</td><td>Reject an unsupported edit</td><td>Retain the last validated processing branch and provenance</td><td>Retain the prior segmentation/reconstruction plus competing hypotheses when ambiguity remains</td></tr>
+              <tr><td>Stopping rule</td><td>No supported local improvement or conflicting validation</td><td>No reproducible held-out gain; worsening guardrail; oscillation; compute cap</td><td>Ambiguity dominated by acquisition limits; topology conflict; unstable result; out-of-distribution specimen; annotation budget reached</td></tr>
+              <tr><td>Expert escalation</td><td>Unresolved local interpretation</td><td>Biologically consequential map interpretation or non-convergent processing</td><td>Identity, membrane/S-layer separation, cell contact, vesicle continuity, or morphology that cannot be resolved from the tomogram alone</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="caution"><strong>Important distinction:</strong> half-map logic transfers most directly to single-particle reconstruction and subtomogram averaging. It is not, by itself, a sufficient validator for whole-cell segmentation, spatial annotation, or biological identity.</p>
+      </div>
+    </section>
+
+    <section class="case-section" id="atomic-only">
+      <div class="case-label"><span>04</span><p>ATOMIC ONLY</p></div>
+      <div class="case-content">
+        <h2>Features that should remain explicitly atomic-model-specific</h2>
+        <div class="atomic-grid">
+          <article><h3>Representation</h3><p>Atoms, residues, chains, sequence registration, ligands, and covalent connectivity.</p></article>
+          <article><h3>Actions</h3><p>Backbone or side-chain rebuilding, residue insertion/deletion, sequence reassignment, and local geometric refinement.</p></article>
+          <article><h3>Validators</h3><p>Bond lengths and angles, clashes, rotamers, Ramachandran or CaBLAM statistics, peptide geometry, and atomic map-to-model scores.</p></article>
+          <article><h3>Error phenotypes</h3><p>Mis-traced backbone, register shift, incorrect side chain, broken chain, or locally unsupported atomic interpretation.</p></article>
+          <article><h3>Benchmarks</h3><p>Atomic models paired with maps/half-maps and challenge or deposition-level reference evaluations.</p></article>
+          <article><h3>Reported outcomes</h3><p>Outcomes reported for one model-building task cannot be treated as expected performance for other tasks.</p></article>
+        </div>
+        <p class="lead-judgment">A tomogram membrane is not a peptide chain. A segmentation component is not a residue. A plausible cellular object is not validated by stereochemistry. Reusing those labels would create false precision.</p>
+      </div>
+    </section>
+
+    <section class="case-section decision-lab" id="decide">
+      <div class="case-label"><span>05</span><p>DECISION LAB</p></div>
+      <div class="case-content">
+        <h2>Would you let the agent promote this result?</h2>
+        <p>Choose a synthetic scenario, inspect the evidence ledger, and decide. The exercise rewards a defensible action—not a prettier image or a better headline metric.</p>
+
+        <label for="scenario-select">Scenario</label>
+        <select id="scenario-select"></select>
+
+        <article class="scenario-card" aria-live="polite">
+          <div class="scenario-head">
+            <p id="scenario-workflow" class="scenario-workflow"></p>
+            <span id="scenario-stage" class="scenario-stage"></span>
+          </div>
+          <h3 id="scenario-title"></h3>
+          <p id="scenario-proposal" class="scenario-proposal"></p>
+          <div class="evidence-ledger">
+            <h4>Evidence ledger</h4>
+            <dl id="scenario-evidence"></dl>
+          </div>
+        </article>
+
+        <fieldset class="decision-options">
+          <legend>Your decision</legend>
+          <label class="decision-option"><input type="radio" name="decision" value="promote"> <span><strong>Promote</strong> Commit the derivative as the new validated state.</span></label>
+          <label class="decision-option"><input type="radio" name="decision" value="rollback"> <span><strong>Rollback</strong> Reject the proposal and retain the previous validated state.</span></label>
+          <label class="decision-option"><input type="radio" name="decision" value="escalate"> <span><strong>Escalate</strong> Preserve competing interpretations for expert review.</span></label>
+          <label class="decision-option"><input type="radio" name="decision" value="stop"> <span><strong>Stop</strong> End the trajectory because further autonomous action is unjustified.</span></label>
+        </fieldset>
+        <button class="button primary" id="check-decision" type="button">Check the evidence gate</button>
+        <div id="decision-feedback" class="decision-feedback" aria-live="polite">
+          <p class="empty-state">Select a decision to reveal the gate outcome and reasoning.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="design">
+      <div class="case-label"><span>06</span><p>REFLECTION</p></div>
+      <div class="case-content">
+        <h2>Explain the evidence, not just the action</h2>
+        <p>For each synthetic decision, identify the observation, its uncertainty and the claim it can support. State which additional independent evidence would change your judgment.</p>
+        <p class="caution">Image appearance and an improved score do not by themselves establish molecular identity or biological function.</p>
+      </div>
+    </section>
+
+    <section class="case-section" id="workshop">
+      <div class="case-label"><span>07</span><p>EXERCISE</p></div>
+      <div class="case-content">
+        <h2>Compare your reason with the feedback</h2>
+        <p>Work through the four synthetic cases. Record your chosen action, supporting evidence, uncertainty and the observation still missing. Discuss disagreements without treating an attractive image as a final scientific conclusion.</p>
+        <p><a href="training/learner-worksheet.md">Open the learner worksheet</a></p>
+      </div>
+    </section>
+
+    <section class="case-section" id="sources">
+      <div class="case-label"><span>08</span><p>SOURCES</p></div>
+      <div class="case-content">
+        <h2>Sources and verification anchors</h2>
+        <ol class="source-list">
+          <li><a href="https://doi.org/10.64898/2026.08.15.745007">Feng et al. (2026), CryoForge, bioRxiv v1</a><span>Primary case-study source; preprint status and DOI record.</span></li>
+          <li><a href="https://www.nature.com/articles/s41592-020-01051-w">Lawson et al. (2021), Cryo-EM model validation recommendations</a><span>Independent fit-to-map and geometry validation context.</span></li>
+          <li><a href="https://www.nature.com/articles/s41467-020-20295-w">Ramírez-Aportela et al. (2021), FSC-Q</a><span>Half-map-supported model validation and overfitting context.</span></li>
+          <li><a href="https://www.wwpdb.org/deposition/tutorial">wwPDB deposition tutorial</a><span>Unmodified half-map requirements for SPA, STA, and helical 3DEM.</span></li>
+          <li><a href="https://www.ebi.ac.uk/emdb/va/">EMDB Validation Analysis</a><span>Archive-level map and map–model validation resources.</span></li>
+          <li><a href="https://www.nature.com/articles/s41592-025-02800-5">Peck et al. (2025), realistic cryo-ET phantom dataset</a><span>Ground-truth annotation and benchmarking for cryo-ET machine learning.</span></li>
+        </ol>
+        <p class="revision-note">Evidence review date: 28 August 2026. Recheck the preprint for revised versions or peer-reviewed publication before teaching or technical reuse.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>AI for Archaea · Case Study 02 · 2026</p>
+    <div><a href="index.html">Workshop Home</a><a href="tutorials/demo-02-evidence-gated-imaging-agent/README.md">Case Notes</a></div>
+  </footer>
+</body>
+</html>

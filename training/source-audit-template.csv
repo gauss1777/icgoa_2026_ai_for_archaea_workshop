@@ -1,0 +1,6 @@
+source_id,doi,source_version,retrieved_on,organism_and_taxonomy_source,environment_or_system,passage_locator,read_depth,supported_claim,evidence_object,validation_reference,validator_independence,uncertainty_or_counterevidence,unsupported_extension,next_discriminating_check,action_and_reason
+R01,10.1038/s41564-025-02061-0,,,,,,,,,,,,,,
+R02,10.1038/s41467-026-71849-3,,,,,,,,,,,,,,
+R03,10.1038/s41586-026-10176-5,,,,,,,,,,,,,,
+R04,10.1038/s41467-026-74423-z,,,,,,,,,,,,,,
+R05,10.3389/fmicb.2026.1897686,,,,,,,,,,,,,,
