@@ -1,21 +1,15 @@
 # Security Policy
 
-## Supported Versions
+## Scope and support
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+This repository is an independent educational resource for the ICGOA 2026 AI for Archaea Workshop. Its documentation, static website, example prompts and browser demos are teaching materials, not a production AI service or an automated laboratory or instrument-control system.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+Security fixes are considered for the latest `main` branch, including repository code and GitHub Actions workflows. There are no separately supported versioned releases; older commits and forks are outside this support scope. Report vulnerabilities in linked third-party tools or services to their own maintainers.
 
-## Reporting a Vulnerability
+## Reporting a vulnerability
 
-Use this section to tell people how to report a vulnerability.
+For a non-sensitive report, [open a GitHub issue](https://github.com/gauss1777/icgoa_2026_ai_for_archaea_workshop/issues/new). Include the affected files and commit, the impact, and reproduction information that is safe to publish.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Issues are public. Do not post credentials, private data, unpublished research, or sensitive exploit details. For a sensitive finding, open an issue only to request a private contact channel from [gauss1777](https://github.com/gauss1777), without disclosing the vulnerability. Wait for a private channel before sending details.
+
+Reports are handled on a best-effort basis. No response or remediation deadline is guaranteed.
