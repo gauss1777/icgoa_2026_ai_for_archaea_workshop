@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="以证据为先的古菌文献筛选互动教程，包含中文模拟条目与可检查的检索流程。">
+  <title>教程演示 01 · AI for Archaea</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="assets/zh.css">
+  <link rel="alternate" hreflang="en" href="../tutorial-demo.html">
+  <script src="assets/tutorial.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">
+      <span class="wordmark-mark" aria-hidden="true">A</span>
+      <span>AI for Archaea</span>
+    </a>
+    <nav aria-label="主导航">
+      <a href="index.html">学习首页</a>
+      <a href="knowledge-base.html">古菌知识库</a>
+      <a class="current" href="tutorial-demo.html">文献筛选演示</a>
+      <a href="imaging-agent-case-study.html">成像案例</a>
+      <a href="https://github.com/gauss1777/icgoa_2026_ai_for_archaea_workshop">GitHub</a>
+      <a href="wiki/Home.md">中文文档</a>
+      <a class="language-switch" href="../tutorial-demo.html" lang="en" hreflang="en">English</a>
+    </nav>
+  </header>
+
+  <main class="demo-page">
+    <header class="page-intro">
+      <p class="eyebrow">教程演示 01 · 文献筛选</p>
+      <h1>形成可核查的证据简报，<br>不止得到一个回答</h1>
+      <p class="hero-summary">使用三个古菌模拟条目，练习问题界定、透明检索、证据提取和人工核查。全部操作在本地浏览器中完成。</p>
+    </header>
+
+    <div class="demo-disclosure">
+      <strong>教学边界</strong>
+      <p>本演示使用确定性的关键词评分器，不是语言模型。条目均为模拟材料，没有 DOI。你可以先检查透明的流程，再考虑接入真实文献或外部 AI 服务。中文问题采用固定关键词表，不进行语义理解。</p>
+    </div>
+
+    <section class="demo-step" aria-labelledby="step-one-title">
+      <div class="step-marker"><span>01</span><p>提出问题</p></div>
+      <div>
+        <h2 id="step-one-title">明确生物学问题</h2>
+        <label for="topic">古菌研究主题</label>
+        <select id="topic">
+          <option value="methane">甲烷循环</option>
+          <option value="ammonia">氨氧化</option>
+          <option value="virus">病毒与宿主相互作用</option>
+        </select>
+
+        <label for="question">研究问题</label>
+        <textarea id="question" rows="4">哪些条目提供了与古菌甲烷循环有关的证据？哪些判断仍需专家核查？</textarea>
+
+        <fieldset>
+          <legend>必选证据字段</legend>
+          <label class="check-option"><input type="checkbox" value="source" checked> 来源标识符</label>
+          <label class="check-option"><input type="checkbox" value="sentence" checked> 支持语句</label>
+          <label class="check-option"><input type="checkbox" value="context" checked> 环境背景</label>
+          <label class="check-option"><input type="checkbox" value="uncertainty" checked> 不确定性说明</label>
+        </fieldset>
+
+        <div class="demo-actions">
+          <button class="button primary" id="run-scan" type="button">运行证据扫描</button>
+          <button class="button secondary" id="reset-demo" type="button">重置</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-step" aria-labelledby="step-two-title">
+      <div class="step-marker"><span>02</span><p>检索</p></div>
+      <div>
+        <h2 id="step-two-title">检查候选条目</h2>
+        <p class="step-help">评分器使用明确列出的主题词和问题关键词。请检查命中词与支持语句，不要只相信排序。中文关键词来自固定词表，英文按字母数字词元匹配。</p>
+        <div id="results" class="results" aria-live="polite">
+          <p class="empty-state">运行证据扫描，对三个模拟教学条目进行排序。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-step" aria-labelledby="step-three-title">
+      <div class="step-marker"><span>03</span><p>整理证据</p></div>
+      <div>
+        <h2 id="step-three-title">生成可追溯的简报</h2>
+        <p class="step-help">简报将来源 ID 与结论对应，并列出尚待核查的事项。它供复核使用，不是最终科学结论。</p>
+        <button class="button primary" id="build-brief" type="button" disabled>生成证据简报</button>
+        <div id="brief" class="brief-output" aria-live="polite">
+          <p class="empty-state">检索后，可在这里生成结构化简报。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-step" aria-labelledby="step-four-title">
+      <div class="step-marker"><span>04</span><p>提示词</p></div>
+      <div>
+        <h2 id="step-four-title">检查供模型使用的提示词</h2>
+        <p class="step-help">若后续使用经批准的模型，应提供限定范围的条目和明确的输出要求，而不是要求模型给出无法追溯依据的泛泛回答。</p>
+        <pre id="prompt-preview" class="prompt-preview">运行演示，生成限定来源与输出范围的提示词。</pre>
+      </div>
+    </section>
+
+    <section class="reflection">
+      <p class="section-number">人工复核检查点</p>
+      <h2>复用简报之前</h2>
+      <ul>
+        <li>研究对象是否依据最新且明确注明的分类体系归类？</li>
+        <li>证据支持的是基因组潜力、表达、活性，还是实测速率？</li>
+        <li>环境背景与目标问题是否具有可比性？</li>
+        <li>同一个标记是否也支持其他途径或解释？</li>
+        <li>在形成真实研究判断前，是否已用原始来源替换全部模拟或二手教学材料？</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>AI for Archaea · 教程演示 01 · 2026</p>
+    <div><a href="index.html">学习首页</a><a href="tutorials/demo-01-literature-triage/README.md">教程说明</a><a href="imaging-agent-case-study.html">成像案例</a></div>
+  </footer>
+</body>
+</html>

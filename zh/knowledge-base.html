@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="古菌生物学与 AI 辅助研究的简明入门知识库。">
+  <title>古菌入门知识库 · AI for Archaea</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="assets/zh.css">
+  <link rel="alternate" hreflang="en" href="../knowledge-base.html">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">
+      <span class="wordmark-mark" aria-hidden="true">A</span>
+      <span>AI for Archaea</span>
+    </a>
+    <nav aria-label="主导航">
+      <a href="index.html">学习首页</a>
+      <a class="current" href="knowledge-base.html">古菌知识库</a>
+      <a href="tutorial-demo.html">文献筛选演示</a>
+      <a href="imaging-agent-case-study.html">成像案例</a>
+      <a href="research-updates.html">研究证据</a>
+      <a href="https://github.com/gauss1777/icgoa_2026_ai_for_archaea_workshop">GitHub</a>
+      <a href="wiki/Home.md">中文文档</a>
+      <a class="language-switch" href="../knowledge-base.html" lang="en" hreflang="en">English</a>
+    </nav>
+  </header>
+
+  <main class="reading-page">
+    <header class="page-intro">
+      <p class="eyebrow">古菌入门知识库</p>
+      <h1>先理解生物学，再使用自动化</h1>
+      <p class="hero-summary">为来自微生物学、基因组学、地球化学或 AI 领域的学习者提供简明参考。这是一张入门导图，不能替代原始文献或专家复核。</p>
+    </header>
+
+    <nav class="jump-nav" aria-label="知识库章节">
+      <a href="#identity">古菌是什么</a>
+      <a href="#cells">细胞</a>
+      <a href="#metabolism">代谢</a>
+      <a href="#ecology">生态</a>
+      <a href="#methods">方法</a>
+      <a href="#ai">AI 的用途</a>
+      <a href="#glossary">术语</a>
+      <a href="#resources">资料入口</a>
+    </nav>
+
+    <section class="kb-section" id="identity">
+      <div class="kb-label"><span>01</span><p>古菌是什么</p></div>
+      <div class="kb-content">
+        <h2>古菌是什么？</h2>
+        <p>古菌是细胞生命的主要域之一。其细胞属于原核型组织方式，但在演化上与细菌不同。古菌的许多信息处理系统，包括部分转录和复制机制，与真核生物相应系统具有深层相似性。</p>
+        <div class="fact-pair">
+          <div>
+            <h3>正确认识</h3>
+            <p>古菌广泛分布于全球，代谢方式多样，在重要生物地球化学循环中发挥关键作用。</p>
+          </div>
+          <div>
+            <h3>摒弃误解</h3>
+            <p>“所有古菌都是嗜极生物”是误解。许多古菌生活在普通海洋、土壤、沉积物、宿主相关或工程化环境中。</p>
+          </div>
+        </div>
+        <p class="caution"><strong>分类注意事项：</strong> 随着基因组资料和系统发育基因组学方法改进，古菌分类会发生变化。请始终记录分类来源与版本发布日期。</p>
+      </div>
+    </section>
+
+    <section class="kb-section" id="cells">
+      <div class="kb-label"><span>02</span><p>细胞生物学</p></div>
+      <div class="kb-content">
+        <h2>细胞膜、细胞壁与信息处理系统</h2>
+        <ul class="evidence-list">
+          <li><strong>细胞膜：</strong> 典型古菌膜脂以醚键将异戊二烯链连接到甘油-1-磷酸上。部分谱系形成可跨越整个膜厚度的四醚脂。</li>
+          <li><strong>细胞包被：</strong> 许多古菌具有蛋白质 S 层。古菌细胞壁不含细菌型肽聚糖，但部分产甲烷古菌具有假肽聚糖。</li>
+          <li><strong>基因表达：</strong> 古菌转录机制具有与真核生物系统相关的组成部分；翻译系统同时保留广泛保守和域特有的特征。</li>
+          <li><strong>细胞分裂：</strong> 不同谱系采用不同机制，包括 ESCRT 相关系统、FtsZ 系统，以及尚未充分阐明的其他机制。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="kb-section" id="metabolism">
+      <div class="kb-label"><span>03</span><p>代谢</p></div>
+      <div class="kb-content">
+        <h2>影响全球物质循环的能量代谢</h2>
+        <div class="term-grid">
+          <article>
+            <h3>产甲烷作用</h3>
+            <p>产甲烷古菌参与生物甲烷产生。相关途径依赖甲基辅酶 M 还原酶，不同谱系可利用二氧化碳、乙酸、甲基化合物或其他底物。</p>
+          </article>
+          <article>
+            <h3>甲烷厌氧氧化</h3>
+            <p>若干古菌类群可在无氧条件下氧化甲烷，常与细菌伙伴形成互营关系，所用电子受体与周围地球化学条件相关。</p>
+          </article>
+          <article>
+            <h3>氨氧化</h3>
+            <p>氨氧化古菌在海洋和陆地系统中广泛存在，对硝化过程有重要贡献，常可在低氨条件下发挥作用。</p>
+          </article>
+          <article>
+            <h3>碳固定与异养</h3>
+            <p>古菌具有多种碳固定途径和异养策略。仅凭基因组注释，可能无法确定其原位活性。</p>
+          </article>
+          <article>
+            <h3>光驱动能量获取</h3>
+            <p>部分古菌利用以视黄醛为发色团的视紫红质产生离子梯度，这不同于基于叶绿素的产氧光合作用。</p>
+          </article>
+          <article>
+            <h3>硫与氢</h3>
+            <p>许多谱系在能量代谢中利用硫化合物或分子氢，尤其常见于无氧和高温系统。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="kb-section" id="ecology">
+      <div class="kb-label"><span>04</span><p>生态</p></div>
+      <div class="kb-content">
+        <h2>生境与相互作用</h2>
+        <p>古菌分布于透光海洋、深层沉积物、土壤、温泉、高盐系统、地下生境、动物微生物组和污水反应器。解释环境过程，不能只看是否检出了标记基因。</p>
+        <ol class="checklist">
+          <li><span>1</span>确认采样环境、深度、化学条件和采集方法。</li>
+          <li><span>2</span>区分相对丰度、绝对丰度与活性。</li>
+          <li><span>3</span>区分基因组潜力与转录本、蛋白、代谢物或速率证据。</li>
+          <li><span>4</span>考虑微生物伙伴、病毒和空间组织。</li>
+          <li><span>5</span>记录结论来自分离培养物、富集培养物、基因组还是群落数据。</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="kb-section" id="methods">
+      <div class="kb-label"><span>05</span><p>研究方法</p></div>
+      <div class="kb-content">
+        <h2>常见证据层次</h2>
+        <div class="table-scroll" role="region" aria-label="常见证据层次对照表" tabindex="0">
+        <table>
+          <thead><tr><th>证据层次</th><th>能够支持什么</th><th>常见局限</th></tr></thead>
+          <tbody>
+            <tr><td>扩增子</td><td>目标标记对应的群落组成</td><td>引物偏倚、拷贝数差异与有限的功能推断</td></tr>
+            <tr><td>宏基因组</td><td>群落基因与重构基因组</td><td>组装、分箱、污染及不完整通路</td></tr>
+            <tr><td>宏转录组</td><td>采样时表达的 RNA</td><td>RNA 稳定性和表达量不等于过程速率</td></tr>
+            <tr><td>蛋白质组</td><td>检测到的蛋白及通路证据</td><td>受提取方法及数据库影响</td></tr>
+            <tr><td>稳定同位素</td><td>来源、转化与速率</td><td>模型假设及不同途径的重叠</td></tr>
+            <tr><td>培养</td><td>受控条件下的生理特性</td><td>实验室条件未必代表自然环境</td></tr>
+            <tr><td>显微成像</td><td>细胞、结构、定位与相互作用</td><td>身份识别与取样的局限</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="kb-section" id="ai">
+      <div class="kb-label"><span>06</span><p>AI 的用途</p></div>
+      <div class="kb-content">
+        <h2>AI 能在哪些环节提供帮助，又可能在哪些环节失误</h2>
+        <div class="fact-pair">
+          <div>
+            <h3>可发挥作用的环节</h3>
+            <ul>
+              <li>扩展检索词与文献初筛</li>
+              <li>从指定来源中提取结构化信息</li>
+              <li>排定注释优先级与复核异常</li>
+              <li>起草代码与整理文档</li>
+              <li>梳理假说</li>
+            </ul>
+          </div>
+          <div>
+            <h3>高风险失误</h3>
+            <ul>
+              <li>编造引文或标识符</li>
+              <li>使用过时分类</li>
+              <li>过于确定地判定基因功能</li>
+              <li>丢失环境背景</li>
+              <li>将相关性写成因果关系</li>
+            </ul>
+          </div>
+        </div>
+        <p class="caution"><strong>最低要求：</strong> 任何科学判断离开工作流前，都必须附有来源标识符、支持证据、不确定性说明和明确的人工核查步骤。</p>
+      </div>
+    </section>
+
+    <section class="kb-section" id="glossary">
+      <div class="kb-label"><span>07</span><p>术语</p></div>
+      <div class="kb-content">
+        <h2>入门术语</h2>
+        <dl class="glossary">
+          <div><dt>AOA</dt><dd>氨氧化古菌。</dd></div>
+          <div><dt>ANME</dt><dd>厌氧甲烷氧化古菌。</dd></div>
+          <div><dt>MAG</dt><dd>宏基因组组装基因组。</dd></div>
+          <div><dt>mcrA</dt><dd>甲基辅酶 M 还原酶的常用标记基因，该酶是产甲烷和相关甲烷代谢的关键酶。</dd></div>
+          <div><dt>S 层</dt><dd>由蛋白或糖蛋白亚基组成的细胞表面层。</dd></div>
+          <div><dt>互营</dt><dd>生物通过交换产物或耦合反应形成的代谢协作关系。</dd></div>
+          <div><dt>四醚脂</dt><dd>可跨越整个膜厚度的古菌膜脂，见于若干谱系和环境。</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="kb-section" id="resources">
+      <div class="kb-label"><span>08</span><p>资料入口</p></div>
+      <div class="kb-content">
+        <h2>权威资料入口</h2>
+        <ul class="resource-list">
+          <li><a href="https://www.ncbi.nlm.nih.gov/taxonomy">NCBI Taxonomy</a><span>标识符与广泛使用的分类记录</span></li>
+          <li><a href="https://gtdb.ecogenomic.org/">基因组分类数据库 GTDB</a><span>基于基因组的细菌与古菌分类</span></li>
+          <li><a href="https://lpsn.dsmz.de/">LPSN</a><span>原核生物命名</span></li>
+          <li><a href="https://www.uniprot.org/">UniProt</a><span>蛋白质序列与功能知识</span></li>
+          <li><a href="https://www.ebi.ac.uk/metagenomics/">MGnify</a><span>微生物组数据与分析</span></li>
+          <li><a href="https://www.icgoa2026.com/">ICGOA 2026</a><span>会议官方信息</span></li>
+        </ul>
+        <p class="revision-note">初版：2026 年 8 月。复用前，请检查数据库版本和原始文献。</p>
+      </div>
+    </section>
+    <p class="revision-note"><strong>研究资料更新：2026 年 10 月 2 日：</strong> <a href="research-updates.html">核查近期 AI 辅助古菌研究</a> ，并区分序列、折叠、注释和表达证据与实测生理活性。仅凭预测，不能确定甲烷转化或分子机制。</p>
+  </main>
+
+  <footer>
+    <p>AI for Archaea · 古菌入门知识库 · 2026</p>
+    <div><a href="index.html">学习首页</a><a href="tutorial-demo.html">文献筛选演示</a><a href="imaging-agent-case-study.html">成像案例</a></div>
+  </footer>
+</body>
+</html>

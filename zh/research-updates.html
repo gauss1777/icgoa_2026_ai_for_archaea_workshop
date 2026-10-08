@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="以证据为先的 AI 辅助古菌研究阅读导图；原文阅读日期为 2026 年 10 月 2 日。">
+  <title>研究证据 · AI for Archaea</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="assets/zh.css">
+  <link rel="alternate" hreflang="en" href="../research-updates.html">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html"><span class="wordmark-mark" aria-hidden="true">A</span><span>AI for Archaea</span></a>
+    <nav aria-label="主导航">
+      <a href="index.html">学习首页</a>
+      <a href="knowledge-base.html">古菌知识库</a>
+      <a href="tutorial-demo.html">文献筛选演示</a>
+      <a href="imaging-agent-case-study.html">成像案例</a>
+      <a class="current" href="research-updates.html">研究证据</a>
+      <a href="https://github.com/gauss1777/icgoa_2026_ai_for_archaea_workshop">GitHub</a>
+      <a href="wiki/Home.md">中文文档</a>
+      <a class="language-switch" href="../research-updates.html" lang="en" hreflang="en">English</a>
+    </nav>
+  </header>
+  <main class="reading-page">
+    <header class="page-intro">
+      <p class="eyebrow">原始研究 / 阅读日期：2026 年 10 月 2 日</p>
+      <h1>读懂结论，<br>找出证据的边界。</h1>
+      <p class="hero-summary">五篇核心论文、两个拓展条目，以及两个明确注明限制的待跟踪条目。这是定向教学导图，不是穷尽式综述或排名榜。</p>
+      <p><a class="button primary" href="training/learner-worksheet.md">开始五篇论文核验</a></p>
+    </header>
+    <nav class="jump-nav" aria-label="研究条目">
+      <a href="#r01">R01</a>
+      <a href="#r02">R02</a>
+      <a href="#r03">R03</a>
+      <a href="#r04">R04</a>
+      <a href="#r05">R05</a>
+      <a href="#extensions">拓展阅读</a>
+      <a href="#watchlist">访问缺口</a>
+    </nav>
+    <p class="revision-note">证据有不同类型，不能简单排列成一套通用阶梯：序列预测、结构模拟、结构域注释、转录本和实测表型回答不同问题。多项计算检查不自动构成独立的实验确认。</p>
+    <section class="kb-section" id="r01">
+      <div class="kb-label"><span>R01</span><p>核心研究</p></div>
+      <div class="kb-content">
+        <h2>深度学习在古菌蛋白质组中发现抗菌肽</h2>
+        <p class="citation-original" lang="en">Deep learning reveals antibiotics in the archaeal proteome</p>
+        <p>Torres、Wan 与 de la Fuente-Nunez | 2025-08-12 | 已通过同行评审</p>
+        <p><strong>应用范围：</strong> 直接应用于古菌序列，并对筛选出的部分候选开展实验验证。从古菌蛋白质组中挖掘候选肽，并针对细菌病原体检测其活性。</p>
+        <p><strong>证据支持：</strong> 研究挖掘了 233 个古菌蛋白质组，优选出 12,623 个候选；在筛选后合成并检测的 80 条肽中，75 条对至少一种受试细菌菌株具有活性。</p>
+        <p class="caution"><strong>不可据此外推：</strong> 这一命中率的分母是经过筛选的实验集合，而非全部预测候选。小鼠模型中的证据不等于人体临床疗效，也不能证明这些肽在古菌中天然发挥抗菌作用。</p>
+        <p><strong>你的核验问题：</strong> 所报告命中率的统计分母是什么？哪些更强的结论还需要新的实验？</p>
+        <p><strong>实际阅读范围：</strong> 元数据、摘要及部分结果段落。原文定位：结果：深度学习引导的候选识别、抗菌活性；摘要。</p>
+        <p><a href="https://www.nature.com/articles/s41564-025-02061-0">阅读原始来源： 10.1038/s41564-025-02061-0</a></p>
+      </div>
+    </section>
+    <section class="kb-section" id="r02">
+      <div class="kb-label"><span>R02</span><p>核心研究</p></div>
+      <div class="kb-content">
+        <h2>古菌域中的组蛋白多样性</h2>
+        <p class="citation-original" lang="en">Histone diversity in the archaeal domain of life</p>
+        <p>Laursen 与 Luger | 2026-04-15 | 已通过同行评审 | 正式出版版本日期：2026-06-12</p>
+        <p><strong>应用范围：</strong> 直接针对古菌开展计算分析。基于 GTDB 第 220 版考察古菌组蛋白的序列多样性。</p>
+        <p><strong>证据支持：</strong> 研究将古菌组蛋白聚类与结构预测、模拟相结合；部分预测的类核小体排列在模拟中不稳定。</p>
+        <p class="caution"><strong>不可据此外推：</strong> 预测与模拟的结合仍属于计算证据，不能证明这些候选组装体在活古菌细胞内如何组织 DNA。</p>
+        <p><strong>你的核验问题：</strong> 两项计算分析是否构成独立的实验确认？仍缺少哪种生物学观察？</p>
+        <p><strong>实际阅读范围：</strong> 元数据及部分结果、讨论和方法段落。原文定位：结果中的结构预测部分；图 5；讨论；方法中的结构预测部分。</p>
+        <p><a href="https://www.nature.com/articles/s41467-026-71849-3">阅读原始来源： 10.1038/s41467-026-71849-3</a></p>
+      </div>
+    </section>
+    <section class="kb-section" id="r03">
+      <div class="kb-label"><span>R03</span><p>核心研究</p></div>
+      <div class="kb-content">
+        <h2>利用 Evo 2 对生命各域的基因组进行建模与设计</h2>
+        <p class="citation-original" lang="en">Genome modelling and design across all domains of life with Evo 2</p>
+        <p>Brixi 等 | 2026-03-04 | 已通过同行评审</p>
+        <p><strong>应用范围：</strong> 通用模型，论文报告了古菌任务的评测结果。跨生命域的基因组数据，包括古菌基因必需性评测。</p>
+        <p><strong>证据支持：</strong> 论文报告了零样本基因必需性预测，并在细菌、古菌及噬菌体物种中利用实验标签进行评估。</p>
+        <p class="caution"><strong>不可据此外推：</strong> 古菌任务评测比“训练集含有古菌序列”更具体，但不能证明模型生成的古菌基因组能够存活，也不能证明对所有谱系和任务都具有泛化能力。</p>
+        <p><strong>你的核验问题：</strong> 哪些证据支持古菌预测任务？哪些更广泛的基因组设计结论尚无证据支持？</p>
+        <p><strong>实际阅读范围：</strong> 元数据、部分结果段落与图注。原文定位：图 2j；结果中的基因必需性段落；扩展数据图 3h。</p>
+        <p><a href="https://www.nature.com/articles/s41586-026-10176-5">阅读原始来源： 10.1038/s41586-026-10176-5</a></p>
+      </div>
+    </section>
+    <section class="kb-section" id="r04">
+      <div class="kb-label"><span>R04</span><p>核心研究</p></div>
+      <div class="kb-content">
+        <h2>甲烷氧化古菌的巨型环状染色体外元件：多样的代谢与防御基因库</h2>
+        <p class="citation-original" lang="en">Jumbo circular extrachromosomal elements of methane-oxidizing archaea with variably extensive metabolic and defense gene repertoires</p>
+        <p>Shi 等 | 2026 年 | 已通过同行评审</p>
+        <p><strong>应用范围：</strong> 在综合生物学研究中利用 AI 辅助古菌注释。Methanoperedens 及其相关染色体外元件。</p>
+        <p><strong>证据支持：</strong> 研究综合了古菌染色体外元件的基因组与表达证据，并随数据公开了专门构建的 ColabFold/AlphaFold3 模型。</p>
+        <p class="caution"><strong>不可据此外推：</strong> 预测折叠、被转录的基因和实测代谢效应是不同的证据对象；不能仅凭模型就推断甲烷转化发生了变化。</p>
+        <p><strong>你的核验问题：</strong> 哪些证据支持元件与宿主的关联？要确认其编码基因的生理效应，还需什么证据？</p>
+        <p><strong>实际阅读范围：</strong> 原文 HTML 的部分段落，以及 PDF 中的摘要和数据可用性段落。原文定位：摘要；结果中的元件与宿主关联部分；数据可用性声明。</p>
+        <p><a href="https://www.nature.com/articles/s41467-026-74423-z">阅读原始来源： 10.1038/s41467-026-74423-z</a> | <a href="https://www.nature.com/articles/s41467-026-74423-z.pdf">出版社 PDF</a></p>
+      </div>
+    </section>
+    <section class="kb-section" id="r05">
+      <div class="kb-label"><span>R05</span><p>核心研究</p></div>
+      <div class="kb-content">
+        <h2>甲烷杆菌目物种中黏附素样蛋白的比较分析</h2>
+        <p class="citation-original" lang="en">Comparative analysis of adhesin-like proteins from Methanobacteriales species</p>
+        <p>Tan、Gupta、Er 与 Seedorf | 2026-09-29 | 已通过同行评审</p>
+        <p><strong>应用范围：</strong> 直接针对古菌进行结构域注释。甲烷杆菌目（Methanobacteriales），包括肠道和瘤胃相关谱系。</p>
+        <p><strong>证据支持：</strong> 论文比较了 17 个物种的黏附素样蛋白架构，并介绍了结合人工整理与模型辅助的结构域识别。</p>
+        <p class="caution"><strong>不可据此外推：</strong> 超过 5,000 个残基的蛋白未纳入预测。论文将 PRISM 相关稿件描述为正在准备中，本轮阅读未核实其可执行软件的发布情况。结构域标签不能证明黏附机制。</p>
+        <p><strong>你的核验问题：</strong> 序列长度筛选、参考注释和评测集划分如何限制生物学结论？</p>
+        <p><strong>实际阅读范围：</strong> 元数据、摘要及部分方法和讨论段落。原文定位：方法中的序列获取与结构建模部分；ALP 结构域表征部分；讨论。</p>
+        <p><a href="https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2026.1897686/full">阅读原始来源： 10.3389/fmicb.2026.1897686</a></p>
+      </div>
+    </section>
+    <section class="kb-section" id="extensions">
+      <div class="kb-label"><span>06</span><p>拓展阅读</p></div>
+      <div class="kb-content">
+        <h2>借鉴方法时，限定结论范围</h2>
+        <article><h3>R06 / 利用 Seq2Symm 快速、准确地预测蛋白质同源寡聚体的对称性</h3><p>作为多蛋白质组分析的一部分，Seq2Symm 被应用于 Pyrococcus furiosus 的蛋白质组。</p><p><strong>结论边界：</strong> 蛋白质组尺度的预测不等于对每个古菌寡聚体都进行了独立的物理实验验证。</p><p><strong>实际阅读范围：</strong> 元数据及部分结果段落.</p><p><a href="https://www.nature.com/articles/s41467-025-57148-3">10.1038/s41467-025-57148-3</a></p></article>
+        <article><h3>R07 / 用于冷冻电子断层成像数据标注评测的逼真模体数据集</h3><p>该模体基准将断层重构图像与人工整理的标注相对应；作者明确指出，标注可能不完整，也可能含有假阳性。</p><p><strong>结论边界：</strong> 人工整理的参考真值并非绝对正确；模型在模体上的表现不能证明其能够完成古菌细胞分割或判定分子身份。</p><p><strong>实际阅读范围：</strong> 元数据及部分结果和方法段落.</p><p><a href="https://www.nature.com/articles/s41592-025-02800-5">10.1038/s41592-025-02800-5</a></p></article>
+      </div>
+    </section>
+    <section class="kb-section" id="watchlist">
+      <div class="kb-label"><span>07</span><p>访问缺口</p></div>
+      <div class="kb-content">
+        <h2>材料未读完整，就如实保留缺口</h2>
+        <article><h3>R08 / MGM2：用于探索微生物组的统一基础模型</h3><p>预印本，第 1 版；待跟踪条目。</p><p><strong>实际阅读范围：</strong> 仅阅读原始页面的索引段落；完整页面访问受阻.</p><p><strong>结论边界：</strong> 本轮阅读未能打开完整原始页面。此条目不代表方法复现或因果验证，也不是核心教学的必选内容。</p><p><a href="https://www.biorxiv.org/content/10.64898/2026.07.20.739063v1.full">10.64898/2026.07.20.739063</a></p></article>
+        <article><h3>R09 / 既有成像模块引用的 CryoForge 预印本</h3><p>预印本；2026 年 8 月模块引用第 1 版，本轮复核未完成。</p><p><strong>实际阅读范围：</strong> 既有公开模块；原始来源复核未完成.</p><p><strong>结论边界：</strong> 本轮阅读未能取得原始全文，DOI/API 获取也失败。不能依据二手摘要补充实现细节、代码发布或运行轨迹性能方面的结论。</p><p><a href="https://doi.org/10.64898/2026.08.15.745007">10.64898/2026.08.15.745007</a></p></article>
+        <p>以上两个条目都不是五篇论文衔接练习的必选内容。不根据二手描述推断代码已发布、方法已复现或新的性能结果。</p>
+      </div>
+    </section>
+    <section class="kb-section">
+      <div class="kb-label"><span>08</span><p>下一步</p></div>
+      <div class="kb-content">
+        <h2>形成核验记录，而不只是再写一份摘要</h2>
+        <p>从每篇核心研究中选择一个结论，附上原文定位信息，明确相应观察或预测，指出一个无依据的外推，并设计下一项有判别力的核查。</p>
+        <div class="resource-list">
+          <a href="training/learner-worksheet.md">学习工作表</a><p>练习问题与具体提交成果。</p>
+          <a href="training/source-audit-template.csv">来源核验 CSV</a><p>空白字段，用于保留实际阅读范围与不确定性。</p>
+          <a href="resources/research-evidence.md">完整证据档案</a><p>来源、适用范围与教学启示。</p>
+          <a href="training/README.md">学习资源</a><p>两个模拟模块与真实论文衔接练习。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><p>AI for Archaea · 以证据为先的中文教学资料 · 2026</p><div><a href="index.html">学习首页</a><a href="https://github.com/gauss1777">gauss1777</a></div></footer>
+</body>
+</html>

@@ -1,5 +1,7 @@
 # AI for Archaea: ICGOA 2026 Workshop Learning Repository
 
+**Language:** English | [简体中文（完整学习资料）](zh/README.md) | [中文版网站](https://gauss1777.github.io/icgoa_2026_ai_for_archaea_workshop/zh/)
+
 An English-language, evidence-first learning repository maintained by [AI Archaea](https://gauss1777.github.io/).
 
 **Independent educational resource.** This is not the official conference website or an announcement of an approved workshop programme, speakers, registration or room arrangements. Check the [official ICGOA 2026 website](https://www.icgoa2026.com/) for conference logistics.
